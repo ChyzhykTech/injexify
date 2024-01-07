@@ -2,13 +2,15 @@
   "name": "injexify",
   "version": "0.0.1",
   "description": "Injexify is a powerful and flexible dependency injection library for TypeScript, designed to simplify the management of dependencies in your applications. With an easy-to-use syntax and robust features, Injexify allows developers to enhance modularity, maintainability, and testability of their TypeScript projects. Harness the magic of dependency injection with Injexify and streamline your application development process.",
-  "main": "index.ts",
+  "main": "src/index.ts",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "node dist/index.js",
+    "build": "tsc",
+    "dev": "ts-node src/index.ts"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/SergeySerg123/injexify.git"
+    "url": "git+https://github.com/ChyzhykTech/injexify.git"
   },
   "author": "Serhii Chyzhyk",
   "license": "MIT",
@@ -16,10 +18,11 @@
     "url": "https://github.com/SergeySerg123/injexify/issues"
   },
   "files": [
-    "index.ts"
+    "src/index.ts"
   ],
-  "homepage": "https://github.com/SergeySerg123/injexify#readme",
+  "homepage": "https://github.com/ChyzhykTech/injexify#readme",
   "devDependencies": {
+    "ts-node": "^10.9.2",
     "typescript": "^5.3.3"
   }
 }

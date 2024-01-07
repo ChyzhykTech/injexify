@@ -1,0 +1,15 @@
+# Ignore built JavaScript files
+*.js
+*.js.map
+
+# Ignore TypeScript build directory
+/dist/
+
+# Ignore Node.js generated files
+node_modules/
+
+# Ignore Visual Studio Code directory
+.vscode/
+
+# Ignore TypeScript configuration file
+tsconfig.json

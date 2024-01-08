@@ -13,3 +13,6 @@ node_modules/
 
 # Ignore TypeScript configuration file
 tsconfig.json
+
+# Ignore WebStorm directory
+.idea/*

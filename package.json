@@ -6,7 +6,8 @@
   "scripts": {
     "start": "node dist/index.js",
     "build": "tsc",
-    "dev": "ts-node src/index.ts"
+    "dev": "ts-node src/index.ts",
+    "prepublishOnly": "npm run build"
   },
   "repository": {
     "type": "git",
@@ -18,11 +19,16 @@
     "url": "https://github.com/SergeySerg123/injexify/issues"
   },
   "files": [
-    "src/index.ts"
+    "dist/**/*",
+    "src/**/*",
+    "README.md"
   ],
   "homepage": "https://github.com/ChyzhykTech/injexify#readme",
   "devDependencies": {
     "ts-node": "^10.9.2",
+    "typescript": "^5.3.3"
+  },
+  "peerDependencies": {
     "typescript": "^5.3.3"
   }
 }

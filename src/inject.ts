@@ -1,10 +1,9 @@
-export const Inject =
-  (token: any): PropertyDecorator =>
-  (target: any, propertyKey: string | symbol) => {
+import { InjexifyContainer } from "./injexify-container";
+
+export function inject(token: any): PropertyDecorator {
+  return function (target: Object, propertyKey: string) {
     Object.defineProperty(target, propertyKey, {
-      get: () => {
-        const injexifyContainer = target.__injexifyContainer;
-        return injexifyContainer ? injexifyContainer.resolve(token) : null;
-      },
+      get: () => InjexifyContainer.resolve(token) ?? undefined,
     });
   };
+}

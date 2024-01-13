@@ -8,6 +8,18 @@ First, install the Injexify package using npm:
 
 `npm install injexify`
 
+
+Second, enable `experimentalDecorators` in the `tsconfig.json`:
+```
+{
+    "compilerOptions": {
+        "experimentalDecorators": true
+        // ...
+    },
+    // ...
+}
+```
+
 ### Usage
 Consider the following example of using Injexify:
 

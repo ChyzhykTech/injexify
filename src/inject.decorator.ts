@@ -13,13 +13,13 @@ import { isClassRegistered } from "./helpers";
  */
 export function inject(token: any): PropertyDecorator {
   return function (target: Object, propertyKey: string) {
-    const className = target.constructor.name;
+    const className = token?.name;
     if (!isClassRegistered(className)) {
       throw new Error(`Class ${className} must be decorated with @injectable before using @inject.`);
     }
 
     Object.defineProperty(target, propertyKey, {
-      get: () => InjexifyContainer.resolve(token) ?? undefined,
+      get: () => InjexifyContainer.resolve(className),
     });
   };
 }

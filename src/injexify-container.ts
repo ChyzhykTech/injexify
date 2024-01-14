@@ -5,14 +5,11 @@ export class InjexifyContainer {
     this.dependencies.set(token, dependency);
   }
 
-  public static resolve<T>(token: any): T | null {
-    const dependency = this.dependencies.get(token);
+  public static resolve<T>(token: any): T {
+    return this.dependencies.get(token) || undefined;
+  }
 
-    if (!dependency) {
-      console.error(`Dependency not registered for token: ${token}`);
-      return null;
-    }
-
-    return dependency;
+  public static clearDependencies() {
+    this.dependencies.clear();
   }
 }

@@ -34,8 +34,5 @@
   "types": "dist/index.d.ts",
   "exports": {
     ".": "./dist/index.js"
-  },
-  "publishConfig": {
-    "registry": "https://npm.pkg.github.com/ChyzhykTech"
   }
 }

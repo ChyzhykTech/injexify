@@ -2,7 +2,6 @@
   "name": "injexify",
   "version": "0.0.9",
   "description": "Injexify is a powerful and flexible dependency injection library for TypeScript, designed to simplify the management of dependencies in your applications. With an easy-to-use syntax and robust features, Injexify allows developers to enhance modularity, maintainability, and testability of their TypeScript projects. Harness the magic of dependency injection with Injexify and streamline your application development process.",
-  "main": "dist/index.ts",
   "scripts": {
     "start": "node dist/index.ts",
     "build": "tsc",
@@ -32,7 +31,9 @@
   "peerDependencies": {
     "typescript": "^5.3.3"
   },
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
   "exports": {
-    ".": "./dist/index.ts"
+    ".": "./dist/index.js"
   }
 }

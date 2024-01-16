@@ -34,5 +34,8 @@
   "types": "dist/index.d.ts",
   "exports": {
     ".": "./dist/index.js"
+  },
+  "dependencies": {
+    "reflect-metadata": "^0.2.1"
   }
 }

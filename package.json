@@ -1,6 +1,6 @@
 {
   "name": "injexify",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "Injexify is a powerful and flexible dependency injection library for TypeScript, designed to simplify the management of dependencies in your applications. With an easy-to-use syntax and robust features, Injexify allows developers to enhance modularity, maintainability, and testability of their TypeScript projects. Harness the magic of dependency injection with Injexify and streamline your application development process.",
   "scripts": {
     "build": "tsc",
@@ -38,4 +38,10 @@
   "dependencies": {
     "reflect-metadata": "^0.2.1"
   }
+  "keywords": [
+    "dependency injection",
+    "TypeScript",
+    "decorators",
+    "typescript-library"
+  ]
 }

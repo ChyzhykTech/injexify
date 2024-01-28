@@ -35,6 +35,9 @@
   "exports": {
     ".": "./dist/index.js"
   },
+  "dependencies": {
+    "reflect-metadata": "^0.2.1"
+  }
   "keywords": [
     "dependency injection",
     "TypeScript",
